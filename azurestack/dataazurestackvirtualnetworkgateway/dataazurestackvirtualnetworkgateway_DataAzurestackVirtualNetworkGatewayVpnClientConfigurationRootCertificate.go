@@ -1,0 +1,6 @@
+package dataazurestackvirtualnetworkgateway
+
+
+type DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificate struct {
+}
+

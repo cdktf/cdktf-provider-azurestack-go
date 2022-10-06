@@ -1,0 +1,6 @@
+package dataazurestackvirtualnetworkgateway
+
+
+type DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRevokedCertificate struct {
+}
+
