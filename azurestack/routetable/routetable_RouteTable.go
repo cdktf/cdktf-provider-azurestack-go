@@ -2,10 +2,10 @@ package routetable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/routetable/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/routetable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -650,6 +650,44 @@ func RouteTable_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.routeTable.RouteTable",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RouteTable_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRouteTable_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.routeTable.RouteTable",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func RouteTable_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateRouteTable_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.routeTable.RouteTable",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package linuxvirtualmachine
 
@@ -86,6 +85,14 @@ func (l *jsiiProxy_LinuxVirtualMachine) validatePutTimeoutsParameters(value *Lin
 }
 
 func validateLinuxVirtualMachine_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLinuxVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

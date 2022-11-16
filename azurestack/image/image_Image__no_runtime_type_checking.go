@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package image
 
@@ -66,6 +65,14 @@ func (i *jsiiProxy_Image) validatePutTimeoutsParameters(value *ImageTimeouts) er
 }
 
 func validateImage_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateImage_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

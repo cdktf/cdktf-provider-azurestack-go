@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package lb
 
@@ -62,6 +61,14 @@ func (l *jsiiProxy_Lb) validatePutTimeoutsParameters(value *LbTimeouts) error {
 }
 
 func validateLb_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLb_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLb_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

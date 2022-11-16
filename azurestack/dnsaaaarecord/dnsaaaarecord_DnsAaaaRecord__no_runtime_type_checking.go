@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dnsaaaarecord
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DnsAaaaRecord) validatePutTimeoutsParameters(value *DnsAaaaRe
 }
 
 func validateDnsAaaaRecord_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsAaaaRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsAaaaRecord_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

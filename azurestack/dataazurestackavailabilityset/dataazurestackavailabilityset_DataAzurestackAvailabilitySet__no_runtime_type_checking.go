@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataazurestackavailabilityset
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataAzurestackAvailabilitySet) validatePutTimeoutsParameters(
 }
 
 func validateDataAzurestackAvailabilitySet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackAvailabilitySet_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackAvailabilitySet_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

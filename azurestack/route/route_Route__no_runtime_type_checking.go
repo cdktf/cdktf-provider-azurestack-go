@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package route
 
@@ -58,6 +57,14 @@ func (r *jsiiProxy_Route) validatePutTimeoutsParameters(value *RouteTimeouts) er
 }
 
 func validateRoute_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRoute_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

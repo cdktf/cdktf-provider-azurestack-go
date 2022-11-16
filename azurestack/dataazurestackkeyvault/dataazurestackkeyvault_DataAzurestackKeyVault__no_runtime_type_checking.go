@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataazurestackkeyvault
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataAzurestackKeyVault) validatePutTimeoutsParameters(value *
 }
 
 func validateDataAzurestackKeyVault_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackKeyVault_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackKeyVault_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

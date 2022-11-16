@@ -2,9 +2,9 @@ package virtualmachineextension
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachineextension/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/virtualmachineextension/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

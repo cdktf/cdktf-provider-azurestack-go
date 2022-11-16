@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package networksecurityrule
 
@@ -58,6 +57,14 @@ func (n *jsiiProxy_NetworkSecurityRule) validatePutTimeoutsParameters(value *Net
 }
 
 func validateNetworkSecurityRule_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkSecurityRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkSecurityRule_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

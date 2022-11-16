@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dnsptrrecord
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DnsPtrRecord) validatePutTimeoutsParameters(value *DnsPtrReco
 }
 
 func validateDnsPtrRecord_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsPtrRecord_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateDnsPtrRecord_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

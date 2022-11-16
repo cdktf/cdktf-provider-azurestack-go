@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package storageaccount
 
@@ -62,6 +61,14 @@ func (s *jsiiProxy_StorageAccount) validatePutTimeoutsParameters(value *StorageA
 }
 
 func validateStorageAccount_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageAccount_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateStorageAccount_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

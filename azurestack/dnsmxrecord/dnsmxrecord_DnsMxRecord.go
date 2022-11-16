@@ -2,10 +2,10 @@ package dnsmxrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsmxrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/dnsmxrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -649,6 +649,44 @@ func DnsMxRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.dnsMxRecord.DnsMxRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsMxRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsMxRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsMxRecord.DnsMxRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsMxRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsMxRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsMxRecord.DnsMxRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

@@ -2,10 +2,10 @@ package dnsptrrecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnsptrrecord/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/dnsptrrecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -659,6 +659,44 @@ func DnsPtrRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.dnsPtrRecord.DnsPtrRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsPtrRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsPtrRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsPtrRecord.DnsPtrRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsPtrRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsPtrRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsPtrRecord.DnsPtrRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

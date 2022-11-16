@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package networkinterfacebackendaddresspoolassociation
 
@@ -58,6 +57,14 @@ func (n *jsiiProxy_NetworkInterfaceBackendAddressPoolAssociation) validatePutTim
 }
 
 func validateNetworkInterfaceBackendAddressPoolAssociation_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceBackendAddressPoolAssociation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateNetworkInterfaceBackendAddressPoolAssociation_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

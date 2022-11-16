@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package windowsvirtualmachinescaleset
 
@@ -114,6 +113,14 @@ func (w *jsiiProxy_WindowsVirtualMachineScaleSet) validatePutWinrmListenerParame
 }
 
 func validateWindowsVirtualMachineScaleSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

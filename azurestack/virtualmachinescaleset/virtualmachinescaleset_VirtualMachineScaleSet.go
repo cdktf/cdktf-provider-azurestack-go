@@ -2,10 +2,10 @@ package virtualmachinescaleset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/virtualmachinescaleset/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/virtualmachinescaleset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1191,6 +1191,44 @@ func VirtualMachineScaleSet_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualMachineScaleSet_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualMachineScaleSet_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func VirtualMachineScaleSet_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateVirtualMachineScaleSet_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.virtualMachineScaleSet.VirtualMachineScaleSet",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

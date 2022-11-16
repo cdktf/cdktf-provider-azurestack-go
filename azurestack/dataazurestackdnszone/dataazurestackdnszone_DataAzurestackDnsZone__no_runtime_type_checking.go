@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataazurestackdnszone
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataAzurestackDnsZone) validatePutTimeoutsParameters(value *D
 }
 
 func validateDataAzurestackDnsZone_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackDnsZone_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackDnsZone_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

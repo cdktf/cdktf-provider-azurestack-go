@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package windowsvirtualmachine
 
@@ -90,6 +89,14 @@ func (w *jsiiProxy_WindowsVirtualMachine) validatePutWinrmListenerParameters(val
 }
 
 func validateWindowsVirtualMachine_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachine_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateWindowsVirtualMachine_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

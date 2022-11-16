@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package lbnatpool
 
@@ -58,6 +57,14 @@ func (l *jsiiProxy_LbNatPool) validatePutTimeoutsParameters(value *LbNatPoolTime
 }
 
 func validateLbNatPool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbNatPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbNatPool_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

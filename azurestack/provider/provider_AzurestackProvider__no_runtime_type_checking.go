@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package provider
 
@@ -14,6 +13,14 @@ func (a *jsiiProxy_AzurestackProvider) validateOverrideLogicalIdParameters(newLo
 }
 
 func validateAzurestackProvider_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzurestackProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateAzurestackProvider_IsTerraformProviderParameters(x interface{}) error {
 	return nil
 }
 

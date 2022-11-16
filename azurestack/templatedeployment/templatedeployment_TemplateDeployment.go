@@ -2,10 +2,10 @@ package templatedeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/templatedeployment/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/templatedeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -661,6 +661,44 @@ func TemplateDeployment_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.templateDeployment.TemplateDeployment",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TemplateDeployment_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTemplateDeployment_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.templateDeployment.TemplateDeployment",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func TemplateDeployment_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateTemplateDeployment_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.templateDeployment.TemplateDeployment",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

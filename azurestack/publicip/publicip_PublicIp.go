@@ -2,10 +2,10 @@ package publicip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/publicip/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/publicip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -847,6 +847,44 @@ func PublicIp_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.publicIp.PublicIp",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PublicIp_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePublicIp_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.publicIp.PublicIp",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func PublicIp_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validatePublicIp_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.publicIp.PublicIp",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

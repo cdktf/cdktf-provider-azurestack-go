@@ -2,10 +2,10 @@ package dnscnamerecord
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dnscnamerecord/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/dnscnamerecord/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -660,6 +660,44 @@ func DnsCnameRecord_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsCnameRecord_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsCnameRecord_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DnsCnameRecord_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDnsCnameRecord_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dnsCnameRecord.DnsCnameRecord",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

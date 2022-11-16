@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package manageddisk
 
@@ -62,6 +61,14 @@ func (m *jsiiProxy_ManagedDisk) validatePutTimeoutsParameters(value *ManagedDisk
 }
 
 func validateManagedDisk_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateManagedDisk_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

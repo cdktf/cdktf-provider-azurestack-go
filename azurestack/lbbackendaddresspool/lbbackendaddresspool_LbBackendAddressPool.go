@@ -2,10 +2,10 @@ package lbbackendaddresspool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/lbbackendaddresspool/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/lbbackendaddresspool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -568,6 +568,44 @@ func LbBackendAddressPool_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.lbBackendAddressPool.LbBackendAddressPool",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LbBackendAddressPool_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLbBackendAddressPool_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.lbBackendAddressPool.LbBackendAddressPool",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func LbBackendAddressPool_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateLbBackendAddressPool_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.lbBackendAddressPool.LbBackendAddressPool",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

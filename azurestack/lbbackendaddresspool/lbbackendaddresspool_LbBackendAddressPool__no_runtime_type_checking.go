@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package lbbackendaddresspool
 
@@ -58,6 +57,14 @@ func (l *jsiiProxy_LbBackendAddressPool) validatePutTimeoutsParameters(value *Lb
 }
 
 func validateLbBackendAddressPool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbBackendAddressPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateLbBackendAddressPool_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

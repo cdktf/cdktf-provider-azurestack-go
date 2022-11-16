@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package routetable
 
@@ -62,6 +61,14 @@ func (r *jsiiProxy_RouteTable) validatePutTimeoutsParameters(value *RouteTableTi
 }
 
 func validateRouteTable_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateRouteTable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateRouteTable_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

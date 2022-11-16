@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package virtualmachinescaleset
 
@@ -114,6 +113,14 @@ func (v *jsiiProxy_VirtualMachineScaleSet) validatePutTimeoutsParameters(value *
 }
 
 func validateVirtualMachineScaleSet_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineScaleSet_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualMachineScaleSet_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

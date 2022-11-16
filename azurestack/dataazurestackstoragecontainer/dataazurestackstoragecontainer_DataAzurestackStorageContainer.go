@@ -2,10 +2,10 @@ package dataazurestackstoragecontainer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/dataazurestackstoragecontainer/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/dataazurestackstoragecontainer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -529,6 +529,44 @@ func DataAzurestackStorageContainer_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurestackStorageContainer_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurestackStorageContainer_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataAzurestackStorageContainer_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataAzurestackStorageContainer_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dataAzurestackStorageContainer.DataAzurestackStorageContainer",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package dataazurestacklbbackendaddresspool
 
@@ -58,6 +57,14 @@ func (d *jsiiProxy_DataAzurestackLbBackendAddressPool) validatePutTimeoutsParame
 }
 
 func validateDataAzurestackLbBackendAddressPool_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackLbBackendAddressPool_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataAzurestackLbBackendAddressPool_IsTerraformElementParameters(x interface{}) error {
 	return nil
 }
 

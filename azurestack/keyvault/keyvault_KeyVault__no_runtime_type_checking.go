@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package keyvault
 
@@ -66,6 +65,14 @@ func (k *jsiiProxy_KeyVault) validatePutTimeoutsParameters(value *KeyVaultTimeou
 }
 
 func validateKeyVault_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyVault_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateKeyVault_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 

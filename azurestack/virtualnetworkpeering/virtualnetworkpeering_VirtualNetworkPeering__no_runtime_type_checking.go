@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package virtualnetworkpeering
 
@@ -58,6 +57,14 @@ func (v *jsiiProxy_VirtualNetworkPeering) validatePutTimeoutsParameters(value *V
 }
 
 func validateVirtualNetworkPeering_IsConstructParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetworkPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateVirtualNetworkPeering_IsTerraformResourceParameters(x interface{}) error {
 	return nil
 }
 
