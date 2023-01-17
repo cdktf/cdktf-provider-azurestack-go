@@ -2,9 +2,9 @@ package dataazurestackresourcegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/jsii"
 
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v2/dataazurestackresourcegroup/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v3/dataazurestackresourcegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
