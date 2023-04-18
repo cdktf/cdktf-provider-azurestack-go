@@ -1,0 +1,20 @@
+package networkinterface
+
+
+type NetworkInterfaceIpConfiguration struct {
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#name NetworkInterface#name}.
+	Name *string `field:"required" json:"name" yaml:"name"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_allocation NetworkInterface#private_ip_address_allocation}.
+	PrivateIpAddressAllocation *string `field:"required" json:"privateIpAddressAllocation" yaml:"privateIpAddressAllocation"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#primary NetworkInterface#primary}.
+	Primary interface{} `field:"optional" json:"primary" yaml:"primary"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address NetworkInterface#private_ip_address}.
+	PrivateIpAddress *string `field:"optional" json:"privateIpAddress" yaml:"privateIpAddress"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#private_ip_address_version NetworkInterface#private_ip_address_version}.
+	PrivateIpAddressVersion *string `field:"optional" json:"privateIpAddressVersion" yaml:"privateIpAddressVersion"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#public_ip_address_id NetworkInterface#public_ip_address_id}.
+	PublicIpAddressId *string `field:"optional" json:"publicIpAddressId" yaml:"publicIpAddressId"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/azurestack/1.0.0/docs/resources/network_interface#subnet_id NetworkInterface#subnet_id}.
+	SubnetId *string `field:"optional" json:"subnetId" yaml:"subnetId"`
+}
+
