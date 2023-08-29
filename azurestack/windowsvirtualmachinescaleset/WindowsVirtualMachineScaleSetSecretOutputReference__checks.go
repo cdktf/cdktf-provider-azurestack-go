@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package windowsvirtualmachinescaleset
@@ -196,6 +199,8 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateS
 
 func (j *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *WindowsVirtualMachineScaleSetSecret:
 		val := val.(*WindowsVirtualMachineScaleSetSecret)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -207,11 +212,9 @@ func (j *jsiiProxy_WindowsVirtualMachineScaleSetSecretOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *WindowsVirtualMachineScaleSetSecret, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *WindowsVirtualMachineScaleSetSecret; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package image
@@ -181,6 +184,8 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetComplexObjectIsFromS
 
 func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *ImageDataDisk:
 		val := val.(*ImageDataDisk)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +197,9 @@ func (j *jsiiProxy_ImageDataDiskOutputReference) validateSetInternalValueParamet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *ImageDataDisk, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *ImageDataDisk; received %#v (a %T)", val, val)
 		}
 	}
 

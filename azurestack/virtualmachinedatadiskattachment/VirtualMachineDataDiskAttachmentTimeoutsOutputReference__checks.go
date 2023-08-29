@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package virtualmachinedatadiskattachment
@@ -181,6 +184,8 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) vali
 
 func (j *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *VirtualMachineDataDiskAttachmentTimeouts:
 		val := val.(*VirtualMachineDataDiskAttachmentTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +197,9 @@ func (j *jsiiProxy_VirtualMachineDataDiskAttachmentTimeoutsOutputReference) vali
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *VirtualMachineDataDiskAttachmentTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *VirtualMachineDataDiskAttachmentTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
