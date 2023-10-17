@@ -7,6 +7,10 @@ package virtualnetworkgatewayconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateGetStringMapAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VirtualNetworkGatewayConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (v *jsiiProxy_VirtualNetworkGatewayConnection) validatePutIpsecPolicyParame
 }
 
 func (v *jsiiProxy_VirtualNetworkGatewayConnection) validatePutTimeoutsParameters(value *VirtualNetworkGatewayConnectionTimeouts) error {
+	return nil
+}
+
+func validateVirtualNetworkGatewayConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

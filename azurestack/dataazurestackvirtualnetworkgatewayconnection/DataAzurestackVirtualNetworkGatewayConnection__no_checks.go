@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnection) validatePutTim
 	return nil
 }
 
+func validateDataAzurestackVirtualNetworkGatewayConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackVirtualNetworkGatewayConnection_IsConstructParameters(x interface{}) error {
 	return nil
 }

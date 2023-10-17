@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackRouteTable) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func validateDataAzurestackRouteTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackRouteTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackLbBackendAddressPool) validatePutTimeoutsParame
 	return nil
 }
 
+func validateDataAzurestackLbBackendAddressPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackLbBackendAddressPool_IsConstructParameters(x interface{}) error {
 	return nil
 }

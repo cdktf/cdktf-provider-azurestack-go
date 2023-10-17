@@ -5,10 +5,10 @@ package subnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v6/subnet/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/subnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -78,6 +78,9 @@ type Subnet interface {
 	VirtualNetworkName() *string
 	SetVirtualNetworkName(val *string)
 	VirtualNetworkNameInput() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -99,7 +102,12 @@ type Subnet interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -557,6 +565,25 @@ func (j *jsiiProxy_Subnet)SetVirtualNetworkName(val *string) {
 	)
 }
 
+// Generates CDKTF code for importing a Subnet resource upon running "cdktf plan <stack-name>".
+func Subnet_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateSubnet_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.subnet.Subnet",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -639,6 +666,17 @@ func Subnet_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (s *jsiiProxy_Subnet) AddMoveTarget(moveTarget *string) {
+	if err := s.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (s *jsiiProxy_Subnet) AddOverride(path *string, value interface{}) {
@@ -796,6 +834,17 @@ func (s *jsiiProxy_Subnet) GetStringMapAttribute(terraformAttribute *string) *ma
 	return returns
 }
 
+func (s *jsiiProxy_Subnet) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := s.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (s *jsiiProxy_Subnet) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -810,6 +859,17 @@ func (s *jsiiProxy_Subnet) InterpolationForAttribute(terraformAttribute *string)
 	)
 
 	return returns
+}
+
+func (s *jsiiProxy_Subnet) MoveTo(moveTarget *string, index interface{}) {
+	if err := s.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		s,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (s *jsiiProxy_Subnet) OverrideLogicalId(newLogicalId *string) {

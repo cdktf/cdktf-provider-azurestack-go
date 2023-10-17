@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackPublicIp) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func validateDataAzurestackPublicIp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackPublicIp_IsConstructParameters(x interface{}) error {
 	return nil
 }

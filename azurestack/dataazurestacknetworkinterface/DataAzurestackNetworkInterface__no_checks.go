@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackNetworkInterface) validatePutTimeoutsParameters
 	return nil
 }
 
+func validateDataAzurestackNetworkInterface_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackNetworkInterface_IsConstructParameters(x interface{}) error {
 	return nil
 }

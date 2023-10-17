@@ -15,6 +15,10 @@ func (a *jsiiProxy_AzurestackProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func validateAzurestackProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateAzurestackProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -59,6 +59,10 @@ func (d *jsiiProxy_DataAzurestackLbRule) validatePutTimeoutsParameters(value *Da
 	return nil
 }
 
+func validateDataAzurestackLbRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
+	return nil
+}
+
 func validateDataAzurestackLbRule_IsConstructParameters(x interface{}) error {
 	return nil
 }

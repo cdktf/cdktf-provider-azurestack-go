@@ -5,10 +5,10 @@ package dataazurestackpublicip
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v6/dataazurestackpublicip/internal"
+	"github.com/cdktf/cdktf-provider-azurestack-go/azurestack/v7/dataazurestackpublicip/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -582,6 +582,25 @@ func (j *jsiiProxy_DataAzurestackPublicIp)SetTags(val *map[string]*string) {
 		"tags",
 		val,
 	)
+}
+
+// Generates CDKTF code for importing a DataAzurestackPublicIp resource upon running "cdktf plan <stack-name>".
+func DataAzurestackPublicIp_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateDataAzurestackPublicIp_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-azurestack.dataAzurestackPublicIp.DataAzurestackPublicIp",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
 }
 
 // Checks if `x` is a construct.
