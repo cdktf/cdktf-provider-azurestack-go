@@ -7,6 +7,10 @@ package dataazurestacknetworkinterface
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (d *jsiiProxy_DataAzurestackNetworkInterfaceIpConfigurationList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataAzurestackNetworkInterfaceIpConfigurationList) validateGetParameters(index *float64) error {
 	return nil
 }
