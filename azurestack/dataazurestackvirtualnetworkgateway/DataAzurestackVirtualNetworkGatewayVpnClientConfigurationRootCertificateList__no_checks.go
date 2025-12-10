@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRoot
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

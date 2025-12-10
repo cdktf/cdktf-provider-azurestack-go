@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackImageOsDiskOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackImageOsDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackImageOsDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackImageOsDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackImageOsDiskOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (m *jsiiProxy_ManagedDiskEncryptionDiskEncryptionKeyOutputReference) valida
 	return nil
 }
 
-func (m *jsiiProxy_ManagedDiskEncryptionDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedDiskEncryptionDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedDiskEncryptionDiskEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedDiskEncryptionDiskEncryptionKeyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

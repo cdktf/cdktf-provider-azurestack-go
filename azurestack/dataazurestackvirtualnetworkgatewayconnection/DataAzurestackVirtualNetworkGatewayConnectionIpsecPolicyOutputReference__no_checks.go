@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayConnectionIpsecPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

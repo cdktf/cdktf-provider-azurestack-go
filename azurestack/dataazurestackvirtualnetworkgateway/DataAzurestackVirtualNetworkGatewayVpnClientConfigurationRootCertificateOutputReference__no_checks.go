@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRoot
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackVirtualNetworkGatewayVpnClientConfigurationRootCertificateOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

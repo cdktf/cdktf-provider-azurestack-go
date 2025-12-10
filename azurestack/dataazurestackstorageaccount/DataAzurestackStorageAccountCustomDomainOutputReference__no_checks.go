@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

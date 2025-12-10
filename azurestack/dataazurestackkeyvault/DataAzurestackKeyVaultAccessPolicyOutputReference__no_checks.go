@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackKeyVaultAccessPolicyOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackKeyVaultAccessPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackKeyVaultAccessPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackKeyVaultAccessPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackKeyVaultAccessPolicyOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

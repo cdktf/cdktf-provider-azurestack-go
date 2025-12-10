@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurestackLbBackendAddressPoolBackendIpConfigurationsList
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackLbBackendAddressPoolBackendIpConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackLbBackendAddressPoolBackendIpConfigurationsList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurestackResourcesResourcesList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackResourcesResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackResourcesResourcesList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

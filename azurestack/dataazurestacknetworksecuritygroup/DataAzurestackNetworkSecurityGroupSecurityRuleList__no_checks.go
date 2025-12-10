@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurestackNetworkSecurityGroupSecurityRuleList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackNetworkSecurityGroupSecurityRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackNetworkSecurityGroupSecurityRuleList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

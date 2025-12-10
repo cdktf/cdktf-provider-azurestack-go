@@ -15,7 +15,7 @@ func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainList) validateGetPara
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackStorageAccountCustomDomainList) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

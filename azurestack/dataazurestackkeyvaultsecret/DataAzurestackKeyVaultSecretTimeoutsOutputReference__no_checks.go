@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackKeyVaultSecretTimeoutsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackKeyVaultSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackKeyVaultSecretTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackKeyVaultSecretTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackKeyVaultSecretTimeoutsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

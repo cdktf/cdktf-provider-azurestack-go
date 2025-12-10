@@ -43,11 +43,11 @@ func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VirtualNetworkSubnetOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 

@@ -43,11 +43,11 @@ func (d *jsiiProxy_DataAzurestackPublicIpsPublicIpsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackPublicIpsPublicIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAzurestackPublicIpsPublicIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAzurestackPublicIpsPublicIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAzurestackPublicIpsPublicIpsOutputReference) validateResolveParameters(context cdktf.IResolveContext) error {
 	return nil
 }
 
